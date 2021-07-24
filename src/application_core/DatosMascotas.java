@@ -23,10 +23,15 @@ public class DatosMascotas {
     }
 
     public  void registrarMascota(Mascota mascota){
-
+        this.mascotas.add(mascota);
     }
 
-    public Mascota buscarMascotas(String nombre){
+    public Mascota buscarMascota(String nombre){
+        for(int i=0; i<this.mascotas.size(); i++){
+            if(this.mascotas.get(i).getNombre().equals(nombre)){
+                return this.mascotas.get(i);
+            }
+        }
         return null;
     }
 
