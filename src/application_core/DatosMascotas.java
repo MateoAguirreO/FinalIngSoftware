@@ -16,6 +16,7 @@ public class DatosMascotas {
     }
 
     public DatosMascotas() {
+        this.mascotas= new ArrayList<>();
     }
 
     public void setMascotas(ArrayList<Mascota> mascotas) {
