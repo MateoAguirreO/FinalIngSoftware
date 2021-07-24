@@ -10,5 +10,7 @@ public class GuarderiaMascotas{
         datosMascotas.registrarMascota(mascota1);
         //Print del nombre de la primera posicion del array donde se encuentra la mascota guardada en memoria.
         System.out.print(datosMascotas.getMascotas().get(0).getNombre());
+        //Buscador por el nombre de la mascota
+        System.out.println(datosMascotas.buscarMascota("Chaca").getNombre()); 
     }
 }
